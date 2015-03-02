@@ -17,9 +17,9 @@ public:
 	}
 
 	void get_matrix();
-	void addmat(matrix_calculator, matrix_calculator);
-	void submat(matrix_calculator, matrix_calculator);
-	void mulmat(matrix_calculator, matrix_calculator);
+	void add_matrix(matrix_calculator, matrix_calculator);
+	void sub_matrix(matrix_calculator, matrix_calculator);
+	void mul_matrix(matrix_calculator, matrix_calculator);
 	void get_matrix1(int a, int b, int c, int d);
 	void printmat();
 

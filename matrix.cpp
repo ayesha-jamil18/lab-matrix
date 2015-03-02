@@ -23,7 +23,7 @@ void matrix_calculator::get_matrix1(int a, int b, int c, int d)
 	cout << endl;
 }
 
-void matrix_calculator::addmat(matrix_calculator first, matrix_calculator second)
+void matrix_calculator::add_matrix(matrix_calculator first, matrix_calculator second)
 {
 	   for ( int i = 0 ; i < row ; i++ )
       for (int j = 0 ; j < coloumn ; j++ )
@@ -31,14 +31,14 @@ void matrix_calculator::addmat(matrix_calculator first, matrix_calculator second
 		cout << endl;
 }
 
-void matrix_calculator::submat(matrix_calculator first, matrix_calculator second)
+void matrix_calculator::sub_matrix(matrix_calculator first, matrix_calculator second)
 {
 	  for ( int i = 0 ; i < row ; i++ )
       for (int j = 0 ; j < coloumn ; j++ )
  		matrix[i][j] = first.matrix[i][j] - second.matrix[i][j];	
 }
 
-void matrix_calculator::mulmat(matrix_calculator first, matrix_calculator second)
+void matrix_calculator::mul_matrix(matrix_calculator first, matrix_calculator second)
 {
 	for ( int i = 0 ; i < row ; i++ )
       for (int j = 0 ; j < coloumn ; j++ )
@@ -62,36 +62,33 @@ int main()
 	matrix_calculator m2;
 	matrix_calculator result;
 int opt;
-
 cout<<"Enter values "<<endl;
 cout<<"First Matrix"<<endl;
 m1.get_matrix();
 cout<<"Second Matrix"<<endl;
 m2.get_matrix();
-
 cout<<"enter options "<<endl;
 cout<<"1. Add"<<endl;
 cout<<"2. Subtract"<<endl;
 cout<<"3. Multiplication"<<endl;
 cin >> opt;
-
 switch (opt){
 
 	case 1:
 	{
-		result.addmat(m1, m2);
+		result.add_matrix(m1, m2);
 	break;
 	}
 
 	case 2:
 	{
-		result.submat(m1, m2);
+		result.sub_matrix(m1, m2);
 	break;
 	}
 
 	case 3:
 	{
-		result.mulmat(m1, m2);
+		result.mul_matrix(m1, m2);
 	break;
 	}
 }
