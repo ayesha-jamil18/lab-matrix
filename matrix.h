@@ -20,6 +20,7 @@ public:
 	void addmat(matrix_calculator, matrix_calculator);
 	void submat(matrix_calculator, matrix_calculator);
 	void mulmat(matrix_calculator, matrix_calculator);
+	void get_matrix1(int a, int b, int c, int d);
 	void printmat();
 
 };

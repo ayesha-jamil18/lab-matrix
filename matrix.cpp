@@ -13,7 +13,15 @@ void matrix_calculator::get_matrix()
 		cout << endl;	
 }
 
+void matrix_calculator::get_matrix1(int a, int b, int c, int d)
+{
 
+	matrix[0][0] = a;
+	matrix[0][1] = b;
+	matrix[1][0] = c;
+	matrix[1][1] = d;
+	cout << endl;
+}
 
 void matrix_calculator::addmat(matrix_calculator first, matrix_calculator second)
 {
